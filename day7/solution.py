@@ -67,6 +67,9 @@ for i in range(len(data)):
 
 root = (0, 70) 
 
+# We need to ensure that every splitter has a "left" and "right" neighbor.
+# So for splitters that don't ever encounter splits down the road, we add two neighbors
+# And for splitters with only one split down the road, we add one.
 for splitter in splitters:
     if splitter not in tree:
         tree[splitter] = (str(splitter)+'-L', str(splitter)+'-R')
