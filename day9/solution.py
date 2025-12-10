@@ -18,4 +18,14 @@ print(answer)
 # Part 2 asks us to find the largest rectangle between two red tiles such that we only incorporate green tiles.
 # Green tiles are in between adjacent red tiles.
 
+answer = 0
+for i in range(len(data)):
+    for j in range(i + 1, len(data)):
+
+        # Same structure.
+        # We just need an extra condition to certify that the rectangle uses only red+green tiles.
+
+        
+        pass
+
 
